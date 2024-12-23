@@ -49,7 +49,7 @@ See 'snap info docker' for additional versions.
 
 ## Решение
 
-
+[Отчёт сканирования](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/vulnerabilities.csv)
 
 ## Задача 3
 1. Изучите файл "proxy.yaml"
@@ -69,6 +69,8 @@ See 'snap info docker' for additional versions.
 
 ## Решение
 
+[SQL-запрос](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/2.png)
+
 ## Задача 4
 1. Запустите в Yandex Cloud ВМ (вам хватит 2 Гб Ram).
 2. Подключитесь к Вм по ssh и установите docker.
@@ -78,6 +80,11 @@ See 'snap info docker' for additional versions.
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
 
 ## Решение
+
+[SQL-запрос](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/3.png)
+[Script](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/bash.sh)
+[Remote-context](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/4.png)
+
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -95,9 +102,23 @@ See 'snap info docker' for additional versions.
 
 ## Решение
 
+[Dive](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/5.png)
+[Save_image](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/6.png)
+
+Команда для сохранения образа в архив (поздно заметил, что комана не попала в скриншот):
+docker image save -o terrimg.tar hashicorp/terraform
+
+[Execute_archive](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/7.png)
+
+
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий.
+
+## Решение
+
+[run_container](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/8.png)
+[command_docker_cp](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/9.png)
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
