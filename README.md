@@ -81,9 +81,9 @@ See 'snap info docker' for additional versions.
 
 ## Решение
 
-[SQL-запрос](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/3.png) 
-[Script](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/bash.sh) 
-[Remote-context](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/4.png)
+[SQL-запрос](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/3.png)  
+[Script](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/bash.sh)  
+[Remote-context](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/4.png)  
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
@@ -101,10 +101,10 @@ See 'snap info docker' for additional versions.
 
 ## Решение
 
-[Dive](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/5.png) 
+[Dive](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/5.png)  
 [Save_image](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/6.png) 
 
-Команда для сохранения образа в архив (поздно заметил, что комана не попала в скриншот): 
+Команда для сохранения образа в архив (поздно заметил, что комана не попала в скриншот):  
 docker image save -o terrimg.tar hashicorp/terraform
 
 [Execute_archive](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/7.png)
@@ -116,9 +116,9 @@ docker image save -o terrimg.tar hashicorp/terraform
 
 ## Решение
 
-[run_container](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/8.png) 
+[run_container](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/8.png)  
 [command_docker_cp](https://github.com/RuslanArestov/shvirtd-example-python/blob/main/files/9.png)
 
 ## Задача 6.2 (**)
-Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
+Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile. 
 Предоставьте скриншоты  действий.
